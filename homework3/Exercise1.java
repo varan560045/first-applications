@@ -28,10 +28,10 @@ public class Exercise1 {
     private static int[] getPositiveValues(int[] values) {
         int[] values2 = new int[calculateSize(values)];
         int currentValue = 0;
-        for (int i = 0; i < values.length; i++) {       // перемещаемся по элементам 1го массива
-            if (values[i] >= 0){                        // проверяем на условие
-                    values2[currentValue] = values[i];  // заносим значения во 2ой массив
-                    currentValue++;                     // увеличиваем текущий индекс на 1
+        for (int i = 0; i < values.length; i++) {                       // перемещаемся по элементам 1го массива
+            if (values[i] >= 0){                                        // проверяем на условие
+                    values2[currentValue] = values[i] * values2.length;  // заносим значения во 2ой массив
+                    currentValue++;                                     // увеличиваем текущий индекс на 1
                 }
             }
         return values2;
